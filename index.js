@@ -72,7 +72,7 @@ class Neighborhood {
 
   customers() {
     return this.deliveries().map(function(delivery) { return delivery.customer();
-    }.bind(this)).unique();
+    }.bind(this));
   };
 
   meals() {

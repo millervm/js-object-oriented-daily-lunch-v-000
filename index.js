@@ -8,7 +8,7 @@ let deliveryId = 0;
 
 class Meal {
   constructor(title, price) {
-    
+
   }
 };
 

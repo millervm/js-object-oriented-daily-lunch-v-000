@@ -61,8 +61,17 @@ class Neighborhood {
   };
 
   deliveries() {
-
+    return null;
   };
+
+  customers() {
+    return null;
+  };
+
+  meals() {
+    return null;
+  };
+  
 };
 
 class Delivery {

@@ -55,7 +55,7 @@ class Customer {
   };
 
   totalSpent() {
-    return null;
+    return sum(meals().map(function(meal) {meal.price}));
   };
 
 };

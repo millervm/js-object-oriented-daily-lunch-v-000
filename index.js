@@ -22,7 +22,7 @@ class Meal {
   };
 
   customers() {
-    return null;
+    return ;
   };
 
   byPrice() {
@@ -76,7 +76,8 @@ class Neighborhood {
   };
 
   meals() {
-    return null;
+    return this.deliveries().map(function(delivery) { return deliver.meal();
+    }.bind(this));
   };
 
 };

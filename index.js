@@ -16,7 +16,10 @@ class Meal {
   };
 
   deliveries() {
-    return null;
+    return store.deliveries.filter(function(delivery) {
+      delivery.mealId === this.id;
+    });
+    
   };
 
   customers() {

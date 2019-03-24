@@ -17,7 +17,7 @@ class Meal {
 
   deliveries() {
     return store.deliveries.filter(function(delivery) {
-      delivery.meal().id === this.id;
+      delivery.mealId === this.id;
     }.bind(this));
 
   };

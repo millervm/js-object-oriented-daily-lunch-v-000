@@ -90,7 +90,7 @@ class Delivery {
   meal() {
     return store.meals.find(function(meal) {
       return meal.id === this.mealId;
-    });
+    }.bind(this));
   };
 
   customer() {
@@ -102,7 +102,7 @@ class Delivery {
   neighorhood() {
     return store.neighborhoods.find(function(neighborhood) {
       return neighborhood.id === this.neighborhoodId;
-    });
+    }.bind(this));
   };
 
 };

@@ -71,7 +71,7 @@ class Neighborhood {
   meals() {
     return null;
   };
-  
+
 };
 
 class Delivery {

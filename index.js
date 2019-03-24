@@ -41,7 +41,7 @@ class Customer {
   };
 
   deliveries() {
-    store.deliveries.filter(function(delivery) {
+    return store.deliveries.filter(function(delivery) {
       return delivery.customer() === this;
     }.bind(this));
   };
@@ -65,7 +65,7 @@ class Neighborhood {
   };
 
   deliveries() {
-    store.deliveries.filter(function(delivery) {
+    return store.deliveries.filter(function(delivery) {
       return delivery.neighborhood() === this;
     }.bind(this));
   };

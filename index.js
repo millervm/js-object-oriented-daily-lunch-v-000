@@ -19,7 +19,7 @@ class Meal {
     return store.deliveries.filter(function(delivery) {
       delivery.mealId === this.id;
     });
-    
+
   };
 
   customers() {

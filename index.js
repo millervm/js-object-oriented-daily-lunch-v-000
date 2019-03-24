@@ -2,6 +2,7 @@
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
 let mealId = 0;
+let customerId = 0;
 let neighborhoodId = 0;
 let deliveryId = 0;
 
@@ -10,7 +11,11 @@ class Meal {
 };
 
 class Customer {
-
+  constructor(name, neighborhoodId) {
+    this.id = ++customerId;
+    this.name = name;
+    this.neighborhoodId = neighborhoodId;
+  }
 };
 
 class Neighborhood {

@@ -56,7 +56,7 @@ class Customer {
 
   totalSpent() {
     let total = 0;
-    return this.meals().map(function(meal) {total += meal.price}.bind(this));
+    this.meals().map(function(meal) {total += meal.price}.bind(this));
     return total;
   };
 

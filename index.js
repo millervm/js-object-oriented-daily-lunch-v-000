@@ -6,15 +6,15 @@ let neighborhoodId = 0;
 let deliveryId = 0;
 
 class Meal {
-  
+
 };
 
 class Neighborhood {
   constructor(name) {
-    
+
   }
 };
 
 class Delivery {
-  
+
 };

@@ -13,7 +13,9 @@ class Meal {
     this.price = price;
 
     store.meals.push(this);
-  }
+  };
+
+  
 };
 
 class Customer {
@@ -32,7 +34,11 @@ class Neighborhood {
     this.name = name;
 
     store.neighborhood.push(this);
-  }
+  };
+
+  deliveries() {
+    
+  };
 };
 
 class Delivery {
@@ -44,4 +50,23 @@ class Delivery {
 
     store.deliveries.push(this);
   };
+
+  meal() {
+    return store.meals.find(function(meal) {
+      return meal.id === this.mealId;
+    });
+  };
+
+  customer() {
+    return store.customers.find(function(customer) {
+      return customer.id === this.customerId;
+    });
+  };
+
+  neighorhood() {
+    return store.neighborhoods.find(function(neighborhood) {
+      return neighborhood.id === this.neighborhoodId;
+    });
+  };
+  
 };

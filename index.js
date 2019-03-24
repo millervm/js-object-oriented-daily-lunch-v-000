@@ -57,7 +57,7 @@ class Neighborhood {
     this.id = ++neighborhoodId;
     this.name = name;
 
-    store.neighborhood.push(this);
+    store.neighborhoods.push(this);
   };
 
   deliveries() {

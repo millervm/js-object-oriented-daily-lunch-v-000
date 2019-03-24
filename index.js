@@ -18,7 +18,7 @@ class Meal {
   deliveries() {
     return store.deliveries.filter(function(delivery) {
       delivery.meal() === this;
-    });
+    }.bind(this));
 
   };
 

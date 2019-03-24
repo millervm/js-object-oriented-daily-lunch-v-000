@@ -22,7 +22,8 @@ class Meal {
   };
 
   customers() {
-    return ;
+    return Array.from(new Set(this.deliveries().map(function(delivery) { return delivery.customer();
+    }.bind(this))));
   };
 
   byPrice() {
@@ -47,7 +48,8 @@ class Customer {
   };
 
   meals() {
-    return null;
+    return Array.from(new Set(this.deliveries().map(function(delivery) { return delivery.meal();
+    }.bind(this))));
   };
 
   totalSpent() {
@@ -76,8 +78,8 @@ class Neighborhood {
   };
 
   meals() {
-    return this.deliveries().map(function(delivery) { return delivery.meal();
-    }.bind(this));
+    return Array.from(new Set(this.deliveries().map(function(delivery) { return delivery.meal();
+    }.bind(this))));
   };
 
 };

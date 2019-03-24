@@ -15,7 +15,7 @@ class Meal {
     store.meals.push(this);
   };
 
-  
+
 };
 
 class Customer {
@@ -37,7 +37,7 @@ class Neighborhood {
   };
 
   deliveries() {
-    
+
   };
 };
 
@@ -68,5 +68,5 @@ class Delivery {
       return neighborhood.id === this.neighborhoodId;
     });
   };
-  
+
 };

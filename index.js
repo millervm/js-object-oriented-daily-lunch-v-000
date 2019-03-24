@@ -55,7 +55,9 @@ class Customer {
   };
 
   totalSpent() {
-    return sum(this.meals().map(function(meal) {meal.price}.bind(this)));
+    let total = 0;
+    return this.meals().map(function(meal) {total += meal.price}.bind(this));
+    return total;
   };
 
 };

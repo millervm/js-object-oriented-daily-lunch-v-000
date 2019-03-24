@@ -10,7 +10,7 @@ class Meal {
 };
 
 class Customer {
-  
+
 };
 
 class Neighborhood {

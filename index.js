@@ -27,7 +27,9 @@ class Meal {
   };
 
   byPrice() {
-    return null;
+    return store.meals.sort(function(a,b) {
+      return a.price - b.price;
+    });
   };
 
 };

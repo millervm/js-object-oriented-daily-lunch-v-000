@@ -15,6 +15,17 @@ class Meal {
     store.meals.push(this);
   };
 
+  deliveries() {
+    return null;
+  };
+
+  customers() {
+    return null;
+  };
+
+  byPrice() {
+    return null;
+  };
 
 };
 

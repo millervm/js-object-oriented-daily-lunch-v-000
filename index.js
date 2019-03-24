@@ -48,8 +48,8 @@ class Customer {
   };
 
   meals() {
-    return Array.from(new Set(this.deliveries().map(function(delivery) { return delivery.meal();
-    }.bind(this))));
+    return this.deliveries().map(function(delivery) { return delivery.meal();
+    }.bind(this));
   };
 
   totalSpent() {

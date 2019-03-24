@@ -19,7 +19,6 @@ class Meal {
     return store.deliveries.filter(function(delivery) {
       return delivery.meal() === this;
     }.bind(this));
-
   };
 
   customers() {
@@ -42,7 +41,9 @@ class Customer {
   };
 
   deliveries() {
-    return null;
+    store.deliveries.filter(function(delivery) {
+      return delivery.customer() === this;
+    }.bind(this));
   };
 
   meals() {
@@ -64,7 +65,9 @@ class Neighborhood {
   };
 
   deliveries() {
-    return null;
+    store.deliveries.filter(function(delivery) {
+      return delivery.neighborhood() === this;
+    }.bind(this));
   };
 
   customers() {

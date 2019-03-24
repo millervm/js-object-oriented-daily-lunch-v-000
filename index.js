@@ -9,6 +9,10 @@ class Meal {
 
 };
 
+class Customer {
+  
+};
+
 class Neighborhood {
   constructor(name) {
     this.id = ++neighborhoodId;

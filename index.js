@@ -49,7 +49,7 @@ class Customer {
   totalSpent() {
     return null;
   };
-  
+
 };
 
 class Neighborhood {
